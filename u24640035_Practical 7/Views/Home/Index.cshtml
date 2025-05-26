@@ -19,7 +19,9 @@
                         <h5 class="card-title">@publication.Title</h5>
                         <p class="text-muted">by @publication.Author.Name</p>
                         <p class="card-text">@publication.Summary</p>
-                        <a href="@publication.MainStoryURL" class="btn btn-primary mt-auto">Read more</a>
+                        <div class="mt-auto">
+                            <a href="@publication.MainStoryURL" class="text-decoration-none">Read more</a>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">@publication.GetFormattedDate()</small>
